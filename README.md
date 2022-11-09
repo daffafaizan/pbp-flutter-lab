@@ -1,20 +1,20 @@
 ## Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 
-
+Secara simpel, widget yang dapat berubah saat user berinteraksi dengannya disebut stateful. Sedangkan, widget yang tidak berubah saat user berinteraksi dengannya disebut stateless.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 
-Widget yang saya pakai adalah appBar, Scaffold, Icon, Column, Row, dan Text.
+Widget yang saya pakai adalah appBar, Scaffold, Icon, Column, Row, Floating Action Button, dan Text.
 
-AppBar berfungsi untuk...
+AppBar merupakan komponen paling atas aplikasi yang fungsinya adalah mengandung tombol-tombol action paling umum. Scaffold berfungsi sebagai class yang mengandung widget-widget yang ditampilkan pada tampilan akhir. Icon merupakan image yang digunakan untuk melambangkan sesuatu. Column dan Row merupakan widget yang berfungsi sebagai layout untuk memosisikan children secara horizontal ataupun vertikal. Floating Action Button merupakan widget yang mengapung di atas layar di atas widget-widget lainnya. Fungsi FAB adalah men-trigger suatu primary action pada app. Terakhir adalah text yang merupakan widget yang berfungsi untuk menampilkan text menggunakan style-style yang berbeda
 
 ## Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.
 
-
+Fungsi setState() merupakan proses rebuild yang memberitahu framework bahwa ada sesuai yang berubah dari kode yang bisa saja mengubah tampilan user interface. Variabel yang terdampak fungsi tersebut merupakan widget yang dapat berubah secara dinamis.
 
 ## Jelaskan perbedaan antara const dengan final.
 
-
+Final berarti value-nya ditetapkan pada variabel dan tidak dapat diubah lagi kedepannya. Const bersifat sama seperti final, namun const membuat variablenya konstan/tidak dapat diubah pada saat compile-time saja.
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
