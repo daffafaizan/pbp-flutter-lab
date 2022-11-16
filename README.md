@@ -1,3 +1,5 @@
+# TUGAS 7
+
 ## Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 
 Secara simpel, widget yang dapat berubah saat user berinteraksi dengannya disebut stateful. Sedangkan, widget yang tidak berubah saat user berinteraksi dengannya disebut stateless.
@@ -25,3 +27,36 @@ Masing-masing Floating Action Button akan memiliki atribut berupa onPressed untu
 Logika selanjutnya adalah menjadikan di atas angka bertuliskan GANJIL dengan warna biru apabila angka ganjil dan bertuliskan GENAP dengan warna merah apabila angka genap. Nilai 0 bertuliskan genap juga dan tidak dapat di-increment. Logika ini dapat diterapkan dengan menggunakan if-else conditional pada Text. Setelah conditional diterapkan, logika utama untuk menampilkan teks ganjil dan genap telah selesai dilakukan.
 
 Logika terakhir adalan styling dari programnya. Styling yang saya maksud adalah pemosisian FAB, warna untuk teks, dan perubahan warna saat hover di atas FAB. Pemosisian FAB pada ujung kanan bawah dan ujung kanan atas dilakukan dengan floatingActionButtonLocation dan padding pada floatingActionButton. Warna untuk teks menggunakan TextStyle. Perubahan warna saat hover di atas FAB menggunakan hoverColor. Setelah langkah-langkah di atas dilakukan, styling dan program telah selesai dibuat.
+
+# TUGAS 8
+
+## Jelaskan Perbedaan Navigator.push dan Navigator.pushReplacement
+
+Secara singkat, Navigator.push hanya menambahkan route ke dalam stack sedangkan Navigator.pushReplacement tak hanya menambahkan route ke dalam stack, namun route sebelumnya juga dihapus.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya!
+
+(1) Drawer
+
+(2) Navigator
+
+(3) ListTile
+
+(4) DropdownButton
+
+(5) TextFormField
+
+(6) TextButton
+
+## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed)
+
+(1) onPressed
+(2) onLongPress
+(3) onTap
+(4) onHover
+
+## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter!
+
+Navigator bekerja dengan stack dari objek-objek route. Untuk menavigasi antara halaman, navigator menggunakan metode push untuk menuju halaman baru dan pop untuk menuju halaman sebelumnya.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas

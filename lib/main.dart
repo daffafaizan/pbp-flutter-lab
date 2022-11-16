@@ -1,5 +1,4 @@
-import 'package:counter_7/form_tambah.dart';
-import 'package:counter_7/form_data.dart';
+import 'package:counter_7/form.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -178,6 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
           FloatingActionButton(
+            heroTag: "btn1", // https://stackoverflow.com/a/51359266
             onPressed: _decrementCounter,
 
             hoverColor: Colors.lightBlue,
@@ -185,6 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: const Icon(Icons.remove),
           ),
           FloatingActionButton(
+            heroTag: "btn2", // https://stackoverflow.com/a/51359266
             onPressed: _incrementCounter,
 
             hoverColor: Colors.lightBlue,
