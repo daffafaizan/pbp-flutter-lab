@@ -156,26 +156,27 @@ class _MyTambahPageState extends State<MyTambahPage> {
                                     },
                                 ),
                             ),
-                            Align(
-                                alignment: Alignment.bottomCenter,
-                                child: TextButton(
-                                child: const Text(
-                                    "Simpan",
-                                    style: TextStyle(color: Colors.white),
-                                ),
-                                style: ButtonStyle(
-                                    backgroundColor: MaterialStateProperty.all(Colors.blue),
-                                ),
-                                onPressed: () {
-                                    if (_formKey.currentState!.validate() != null) {
-                                        ListBudget.budget.add(Budget(_judul, _nominal, _jenis!));
-                                        clearText();
-                                    }
-                                },
-                                ),
-                            ),
                         ],
                     ),
+                ),
+            ),
+            floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+            floatingActionButton: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: TextButton(
+                child: const Text(
+                    "Simpan",
+                    style: TextStyle(color: Colors.white),
+                ),
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.blue),
+                ),
+                onPressed: () {
+                    if (_formKey.currentState!.validate() != null) {
+                        ListBudget.budget.add(Budget(_judul, _nominal, _jenis!));
+                        clearText();
+                    }
+                },
                 ),
             ),
         );

@@ -72,14 +72,24 @@ class _MyDataPageState extends State<MyDataPage> {
                                             Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                    Text(budget.getJudul),
+                                                    Text(
+                                                        budget.getJudul,
+                                                        style: const TextStyle(fontSize: 30),
+                                                    ),
                                                 ],
                                             ),
+                                            Spacer(),
                                             Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                 children: [
-                                                    Text(budget.getNominal.toString()),
-                                                    Text(budget.getJenis),
+                                                    Text(
+                                                        budget.getNominal.toString(),
+                                                        style: const TextStyle(fontSize: 15),
+                                                    ),
+                                                    Text(
+                                                        budget.getJenis,
+                                                        style: const TextStyle(fontSize: 20),
+                                                    ),
                                                 ],
                                             )
                                         ],
@@ -90,8 +100,8 @@ class _MyDataPageState extends State<MyDataPage> {
                     )).toList() : [
                         Center(
                             child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                    const Text("Belum ada data budget yang ditambahkan")
                                 ]
                             )
                         )

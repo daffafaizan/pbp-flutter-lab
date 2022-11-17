@@ -37,21 +37,22 @@ Secara singkat, Navigator.push hanya menambahkan route ke dalam stack sedangkan 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya!
 
 (1) Drawer
-
+= Layar samping yan dapat digeser dan mengandung link penting pada aplikasi.
 (2) Navigator
-
+= Widget yang membantu user menavigasi ke rute-rute lain.
 (3) ListTile
-
+= Widget yang mengisi ListView. Menampilkan informasi berupa title, subtitle, leading icon, dan trailing icon.
 (4) DropdownButton
-
+= Widget yang memiliki pilihan item yang bisa dipilih user.
 (5) TextFormField
-
+= TextField yang digunakan dalam form.
 (6) TextButton
+= Class yang digunakan untuk menampilkan text label pada elevasi 0.
 
 ## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed)
 
 (1) onPressed
-(2) onLongPress
+(2) onChanged
 (3) onTap
 (4) onHover
 
@@ -59,4 +60,12 @@ Secara singkat, Navigator.push hanya menambahkan route ke dalam stack sedangkan 
 
 Navigator bekerja dengan stack dari objek-objek route. Untuk menavigasi antara halaman, navigator menggunakan metode push untuk menuju halaman baru dan pop untuk menuju halaman sebelumnya.
 
-## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!
+
+- Buat dua page baru bernama form_data dan form_tambah
+- Buat ListTitle baru pada drawer untuk merujuk pada kedua page yang baru
+- Buat page models yang berisi data untuk ditampilkan
+- Buat form judul dan nominal serta dropdown jenis penggunaan budget pada page form_tambah
+- Buat tombol submit yang menyimpan data pada ListBudget bernama budget
+- Aksesbudget pada page form_data
+- Tampilkan data yang terdapat pada budget ke card untuk merepresentasikan budget
