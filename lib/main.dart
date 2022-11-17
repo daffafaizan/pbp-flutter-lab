@@ -1,4 +1,5 @@
-import 'package:counter_7/form.dart';
+import 'package:counter_7/form_tambah.dart';
+import 'package:counter_7/form_data.dart';
 import 'package:flutter/material.dart';
 
 void main() {

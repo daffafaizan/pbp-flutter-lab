@@ -1,5 +1,6 @@
 import 'package:counter_7/main.dart';
 import 'package:counter_7/form_tambah.dart';
+import 'package:counter_7/model.dart';
 import 'package:flutter/material.dart';
 
 class MyDataPage extends StatefulWidget {
@@ -10,6 +11,7 @@ class MyDataPage extends StatefulWidget {
 }
 
 class _MyDataPageState extends State<MyDataPage> {
+    final List<Budget> budgetData = ListBudget.budget;
     @override
     Widget build(BuildContext context) {
         return Scaffold(
@@ -55,10 +57,45 @@ class _MyDataPageState extends State<MyDataPage> {
             ),
             body: Center(
                 child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                        Text('Hello World!'),
-                    ],
+                    children: budgetData.isNotEmpty ? 
+                    budgetData.map((budget) => Container(
+                        child: Card(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: SizedBox(
+                                height: 100,
+                                child: Container(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                        children: [
+                                            Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                    Text(budget.getJudul),
+                                                ],
+                                            ),
+                                            Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                    Text(budget.getNominal.toString()),
+                                                    Text(budget.getJenis),
+                                                ],
+                                            )
+                                        ],
+                                    ),
+                                ),
+                            ),
+                        )
+                    )).toList() : [
+                        Center(
+                            child: Column(
+                                children: [
+                                    const Text("Belum ada data budget yang ditambahkan")
+                                ]
+                            )
+                        )
+                    ]
                 ),
             ),
         );
