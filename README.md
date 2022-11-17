@@ -36,25 +36,25 @@ Secara singkat, Navigator.push hanya menambahkan route ke dalam stack sedangkan 
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya!
 
-(1) Drawer
+1. Drawer
 = Layar samping yan dapat digeser dan mengandung link penting pada aplikasi.
-(2) Navigator
+2. Navigator
 = Widget yang membantu user menavigasi ke rute-rute lain.
-(3) ListTile
+3. ListTile
 = Widget yang mengisi ListView. Menampilkan informasi berupa title, subtitle, leading icon, dan trailing icon.
-(4) DropdownButton
+4. DropdownButton
 = Widget yang memiliki pilihan item yang bisa dipilih user.
-(5) TextFormField
+5. TextFormField
 = TextField yang digunakan dalam form.
-(6) TextButton
+6. TextButton
 = Class yang digunakan untuk menampilkan text label pada elevasi 0.
 
 ## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed)
 
-(1) onPressed
-(2) onChanged
-(3) onTap
-(4) onHover
+1. onPressed
+2. onChanged
+3. onTap
+4. onHover
 
 ## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter!
 
