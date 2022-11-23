@@ -69,3 +69,27 @@ Navigator bekerja dengan stack dari objek-objek route. Untuk menavigasi antara h
 - Buat tombol submit yang menyimpan data pada ListBudget bernama budget
 - Aksesbudget pada page form_data
 - Tampilkan data yang terdapat pada budget ke card untuk merepresentasikan budget
+
+# TUGAS 9
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Bisa, namun struktur dari data yang kita ambil bisa tidak sesuai. Oleh karena itu, lebih baik dibuat model agar data dapat diakses dengan lebih muduh dan lebih terstruktur.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya!
+
+(1) Center
+(2) Row
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter!
+
+(1) Menambahkan dependency http ke proyek
+(2) Membuat model yang sesuai dengan json
+(3) Membuat http request ke web dengan menggunakan dependency http
+(4) Objek yang diambil dari web service dikonversikan ke model yang telah dibuat
+(5) Data yang telah dikonversi ditampilkan dengan FutureBuilder
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!
+
+(1) Menambahkan mywatchlist pada drawer
+(2) 
