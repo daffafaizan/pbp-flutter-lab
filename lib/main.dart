@@ -1,5 +1,6 @@
-import 'package:counter_7/form_tambah.dart';
-import 'package:counter_7/form_data.dart';
+import 'package:counter_7/page/form_tambah.dart';
+import 'package:counter_7/page/form_data.dart';
+import 'package:counter_7/page/form_watchlist.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -122,6 +123,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => const MyDataPage()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('My Watch List'),
+              onTap: () {
+                // Route menu ke halaman form_data
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyWatchListPage()),
                 );
               },
             ),
