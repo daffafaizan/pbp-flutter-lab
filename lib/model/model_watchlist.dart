@@ -41,14 +41,14 @@ class Fields {
         required this.review,
     });
 
-    Watched watched;
+    String watched;
     String title;
     double rating;
     String releaseDate;
     String review;
 
     factory Fields.fromJson(Map<String, dynamic> json) => Fields(
-        watched: watchedValues.map[json["watched"]]!,
+        watched: json["watched"],
         title: json["title"],
         rating: json["rating"].toDouble(),
         releaseDate: json["release_date"],
@@ -56,20 +56,13 @@ class Fields {
     );
 
     Map<String, dynamic> toJson() => {
-        "watched": watchedValues.reverse[watched],
+        "watched": watched,
         "title": title,
         "rating": rating,
         "release_date": releaseDate,
         "review": review,
     };
 }
-
-enum Watched { BELUM, SUDAH }
-
-final watchedValues = EnumValues({
-    "Belum": Watched.BELUM,
-    "Sudah": Watched.SUDAH
-});
 
 enum Model { MYWATCHLIST_MYWATCHLIST }
 
