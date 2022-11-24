@@ -78,8 +78,8 @@ Bisa, namun struktur dari data yang kita ambil bisa tidak sesuai. Oleh karena it
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya!
 
-(1) Center
-(2) Row
+(1) Center = Menengahkan child pada dirinya sendiri
+(2) Row = Widget yang menampilkan children secara horizontal
 
 ## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter!
 
@@ -92,4 +92,9 @@ Bisa, namun struktur dari data yang kita ambil bisa tidak sesuai. Oleh karena it
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!
 
 (1) Menambahkan mywatchlist pada drawer
-(2) 
+(2) Membuat page baru berjudul form_watchlist.dart dan models baru untuk json yang akan diambil berjudul model_watchlists.dart
+(3) Tambahkan package http dan kode pada AndroidManifest.xml agar diperbolehkan akses internet
+(4) Lakukan pengambilan data dari url tugas django dengan http.get
+(5) Lalu, tampilkan data dengan FutureBuilder
+(6) Buat page baru untuk menampilkan detail dari masing-masing film yang telah ditonton
+(7) Buat fungsi onPressed() yang merujuk page tersebut ketika card ditekan
