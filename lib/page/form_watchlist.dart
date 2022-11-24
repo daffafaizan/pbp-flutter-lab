@@ -36,6 +36,8 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Content-Type": "application/json",
+            "Connection": "Keep-Alive",
+            "Keep-Alive": "timeout=5, max=1000",
         },
         );
 
